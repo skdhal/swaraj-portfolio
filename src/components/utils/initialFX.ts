@@ -1,6 +1,7 @@
 import { TextSplitter } from "../../utils/textSplitter";
 import gsap from "gsap";
 import { lenis } from "../Navbar";
+import { setAllTimeline } from "./GsapScroll";
 
 export function initialFX() {
   document.body.style.overflowY = "auto";
@@ -8,6 +9,11 @@ export function initialFX() {
     lenis.start();
   }
   document.getElementsByTagName("main")[0].classList.add("main-active");
+  // Normally wired up by the 3D character's load callback (see
+  // Character/utils/character.ts). With the character permanently
+  // disabled, this is the only place scroll-driven sections like the
+  // career timeline get set up.
+  setAllTimeline();
   gsap.to("body", {
     backgroundColor: "#0b080c",
     duration: 0.5,

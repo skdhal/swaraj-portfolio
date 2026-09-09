@@ -507,6 +507,31 @@ h2.landing-info-h2 {
     transform: translate(0%, -50%);
     right: auto;
     left: 66%;
+    max-width: 30vw;
+  }
+
+  /* Without the 3D character to mask the overflow, this text must wrap
+     to stay on screen instead of running off the right edge. The role
+     text divs set their own white-space: nowrap (more specific than
+     inheriting from the <h2> wrapper), so they need the override too. */
+  .landing-info h2 {
+    white-space: normal;
+    margin-top: 8px;
+  }
+
+  h2.landing-info-h2 {
+    width: auto;
+  }
+
+  .landing-h2-1,
+  .landing-h2-info {
+    white-space: normal;
+  }
+
+  /* This bottom-fade mask was tuned for a single nowrap line; on
+     wrapped multi-line text it blots out the second line instead. */
+  .landing-info-h2::after {
+    display: none;
   }
 }
 
@@ -526,6 +551,7 @@ h2.landing-info-h2 {
     transform: translate(0%, -50%);
     right: auto;
     left: 70%;
+    max-width: 26vw;
   }
 }
 
