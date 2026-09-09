@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1.4" fill="#ffffff" opacity="0.045"/>
+    </pattern>
+    <radialGradient id="vignette" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#1a1420" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0b080c" stop-opacity="1"/>
+    </radialGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3a3340"/>
+    </marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c2a4ff"/>
+    </marker>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="#0b080c"/>
+  <rect width="1200" height="750" fill="url(#dots)"/>
+  <rect width="1200" height="750" fill="url(#vignette)"/>
+
+  <text x="60" y="66" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13" letter-spacing="3" fill="#8a76b3">CPQ</text>
+  <text x="60" y="98" font-family="Georgia, serif" font-size="26" fill="#e9e4ee">Subscription &amp; Pricing Engine</text>
+  <line x1="60" y1="118" x2="1140" y2="118" stroke="#2a2430" stroke-width="1"/>
+
+<rect x="60" y="170" width="330" height="100" rx="10" fill="#151016" stroke="#3a3340" stroke-width="1.2"/><text x="225" y="225" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="15" font-weight="600" fill="#e9e4ee">B2B Commerce</text><rect x="435" y="170" width="330" height="100" rx="10" fill="#1f1828" stroke="#c2a4ff" stroke-width="1.4"/><text x="600" y="225" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="15" font-weight="600" fill="#e9e4ee">Salesforce CPQ</text><rect x="810" y="170" width="330" height="100" rx="10" fill="#151016" stroke="#3a3340" stroke-width="1.2"/><text x="975" y="214" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="15" font-weight="600" fill="#e9e4ee">Subscription</text><text x="975" y="231" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="15" font-weight="600" fill="#e9e4ee">Management</text><rect x="60" y="350" width="1080" height="90" rx="10" fill="#1c1620" stroke="#2a2430" stroke-width="1"/><text x="600.0" y="400" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="14" font-weight="600" fill="#c2a4ff">Integration Layer</text><line x1="225" y1="270" x2="225" y2="350" stroke="#8a76b3" stroke-width="1.4" marker-end="url(#arrowAccent)"/><line x1="600" y1="270" x2="600" y2="350" stroke="#8a76b3" stroke-width="1.4" marker-end="url(#arrowAccent)"/><line x1="975" y1="270" x2="975" y2="350" stroke="#8a76b3" stroke-width="1.4" marker-end="url(#arrowAccent)"/><rect x="130" y="530" width="260" height="100" rx="10" fill="#151016" stroke="#3a3340" stroke-width="1.3"/><text x="260" y="574" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Dynamic Discount</text><text x="260" y="591" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Framework</text><line x1="260" y1="530" x2="600.0" y2="440" stroke="#3a3340" stroke-width="1.4" marker-end="url(#arrow)"/><rect x="430" y="530" width="260" height="100" rx="10" fill="#151016" stroke="#3a3340" stroke-width="1.3"/><text x="560" y="585" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Coupon System</text><line x1="560" y1="530" x2="600.0" y2="440" stroke="#3a3340" stroke-width="1.4" marker-end="url(#arrow)"/><rect x="730" y="530" width="260" height="100" rx="10" fill="#151016" stroke="#3a3340" stroke-width="1.3"/><text x="860" y="574" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Tiered / Recurring</text><text x="860" y="591" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Pricing</text><line x1="860" y1="530" x2="600.0" y2="440" stroke="#3a3340" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="60" y="712" font-family="'Geist', Arial, sans-serif" font-size="11.5" fill="#8d8494">Illustrative integration layer — generic framework, not client pricing data.</text>
+</svg>

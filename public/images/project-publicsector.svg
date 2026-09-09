@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1.4" fill="#ffffff" opacity="0.045"/>
+    </pattern>
+    <radialGradient id="vignette" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#1a1420" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0b080c" stop-opacity="1"/>
+    </radialGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3a3340"/>
+    </marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c2a4ff"/>
+    </marker>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="#0b080c"/>
+  <rect width="1200" height="750" fill="url(#dots)"/>
+  <rect width="1200" height="750" fill="url(#vignette)"/>
+
+  <text x="60" y="66" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13" letter-spacing="3" fill="#8a76b3">PUBLIC SECTOR</text>
+  <text x="60" y="98" font-family="Georgia, serif" font-size="26" fill="#e9e4ee">Workforce Enablement Module</text>
+  <line x1="60" y1="118" x2="1140" y2="118" stroke="#2a2430" stroke-width="1"/>
+
+<rect x="60.0" y="200" width="170" height="90" rx="10" fill="#1f1828" stroke="#c2a4ff" stroke-width="1.4"/><text x="145.0" y="240.5" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Contract</text><text x="145.0" y="257.5" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Initiated</text><rect x="287.5" y="200" width="170" height="90" rx="10" fill="#151016" stroke="#3a3340" stroke-width="1.2"/><text x="372.5" y="240.5" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Dept. A</text><text x="372.5" y="257.5" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Approval</text><rect x="515.0" y="200" width="170" height="90" rx="10" fill="#151016" stroke="#3a3340" stroke-width="1.2"/><text x="600.0" y="240.5" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Dept. B</text><text x="600.0" y="257.5" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Approval</text><rect x="742.5" y="200" width="170" height="90" rx="10" fill="#151016" stroke="#3a3340" stroke-width="1.2"/><text x="827.5" y="240.5" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Dept. C</text><text x="827.5" y="257.5" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Approval</text><rect x="970.0" y="200" width="170" height="90" rx="10" fill="#1f1828" stroke="#c2a4ff" stroke-width="1.4"/><text x="1055.0" y="240.5" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Active</text><text x="1055.0" y="257.5" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#e9e4ee">Contract</text><line x1="230.0" y1="245.0" x2="287.5" y2="245.0" stroke="#8a76b3" stroke-width="1.4" marker-end="url(#arrowAccent)"/><line x1="457.5" y1="245.0" x2="515.0" y2="245.0" stroke="#8a76b3" stroke-width="1.4" marker-end="url(#arrowAccent)"/><line x1="685.0" y1="245.0" x2="742.5" y2="245.0" stroke="#8a76b3" stroke-width="1.4" marker-end="url(#arrowAccent)"/><line x1="912.5" y1="245.0" x2="970.0" y2="245.0" stroke="#8a76b3" stroke-width="1.4" marker-end="url(#arrowAccent)"/><rect x="60" y="380" width="1080" height="160" rx="10" fill="#1c1620" stroke="#2a2430" stroke-width="1"/><text x="86" y="416" font-family="Geist, Arial, sans-serif" font-size="13.5" font-weight="600" fill="#c2a4ff">Role-based access</text><rect x="86" y="440" width="107.6" height="24" rx="12" fill="none" stroke="#e8b876" stroke-width="1" opacity="0.7"/>
+<text x="139.8" y="456" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" letter-spacing="1" fill="#e8b876">CASE WORKER</text><rect x="346" y="440" width="168.4" height="24" rx="12" fill="none" stroke="#7fd8c8" stroke-width="1" opacity="0.7"/>
+<text x="430.2" y="456" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" letter-spacing="1" fill="#7fd8c8">DEPARTMENT REVIEWER</text><rect x="606" y="440" width="160.79999999999998" height="24" rx="12" fill="none" stroke="#e8b876" stroke-width="1" opacity="0.7"/>
+<text x="686.4" y="456" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" letter-spacing="1" fill="#e8b876">COMPLIANCE OFFICER</text><rect x="866" y="440" width="191.2" height="24" rx="12" fill="none" stroke="#7fd8c8" stroke-width="1" opacity="0.7"/>
+<text x="961.6" y="456" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10.5" letter-spacing="1" fill="#7fd8c8">MINISTRY ADMINISTRATOR</text><text x="86" y="500" font-family="Geist, Arial, sans-serif" font-size="12.5" fill="#8d8494">Custom object model governs contract lifecycle and cross-department approval routing.</text>
+<text x="60" y="712" font-family="'Geist', Arial, sans-serif" font-size="11.5" fill="#8d8494">Illustrative approval routing — generic roles and stages.</text>
+</svg>

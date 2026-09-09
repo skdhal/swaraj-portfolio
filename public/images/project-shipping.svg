@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750">
+
+  <defs>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="1.4" cy="1.4" r="1.4" fill="#ffffff" opacity="0.045"/>
+    </pattern>
+    <radialGradient id="vignette" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#1a1420" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#0b080c" stop-opacity="1"/>
+    </radialGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3a3340"/>
+    </marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c2a4ff"/>
+    </marker>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="750" fill="#0b080c"/>
+  <rect width="1200" height="750" fill="url(#dots)"/>
+  <rect width="1200" height="750" fill="url(#vignette)"/>
+
+  <text x="60" y="66" font-family="'JetBrains Mono', 'Courier New', monospace" font-size="13" letter-spacing="3" fill="#8a76b3">LOGISTICS</text>
+  <text x="60" y="98" font-family="Georgia, serif" font-size="26" fill="#e9e4ee">Multi-Carrier Shipping Integration</text>
+  <line x1="60" y1="118" x2="1140" y2="118" stroke="#2a2430" stroke-width="1"/>
+
+<rect x="60" y="180" width="240" height="100" rx="10" fill="#151016" stroke="#3a3340" stroke-width="1.2"/><text x="180.0" y="228.0" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="14" font-weight="600" fill="#e9e4ee">Mixed Cart</text><text x="180.0" y="246.0" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="11.5" fill="#8d8494">Multi-item order</text><rect x="360" y="180" width="260" height="100" rx="10" fill="#1f1828" stroke="#c2a4ff" stroke-width="1.4"/><text x="490.0" y="228.0" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="14" font-weight="600" fill="#e9e4ee">Item Grouping</text><text x="490.0" y="246.0" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="11.5" fill="#8d8494">Intelligent split by carrier capability</text><line x1="300" y1="230" x2="360" y2="230" stroke="#3a3340" stroke-width="1.4" marker-end="url(#arrow)"/><rect x="400" y="350" width="190" height="80" rx="10" fill="#151016" stroke="#3a3340" stroke-width="1.2"/><text x="495.0" y="388.0" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="14" font-weight="600" fill="#e9e4ee">Carrier A</text><text x="495.0" y="406.0" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="11.5" fill="#8d8494">Rate shop</text><line x1="490" y1="280" x2="495" y2="350" stroke="#3a3340" stroke-width="1.4" marker-end="url(#arrow)"/><rect x="630" y="350" width="190" height="80" rx="10" fill="#151016" stroke="#3a3340" stroke-width="1.2"/><text x="725.0" y="388.0" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="14" font-weight="600" fill="#e9e4ee">Carrier B</text><text x="725.0" y="406.0" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="11.5" fill="#8d8494">Rate shop</text><line x1="490" y1="280" x2="725" y2="350" stroke="#3a3340" stroke-width="1.4" marker-end="url(#arrow)"/><rect x="860" y="350" width="190" height="80" rx="10" fill="#151016" stroke="#3a3340" stroke-width="1.2"/><text x="955.0" y="388.0" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="14" font-weight="600" fill="#e9e4ee">Carrier C</text><text x="955.0" y="406.0" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="11.5" fill="#8d8494">Rate shop</text><line x1="490" y1="280" x2="955" y2="350" stroke="#3a3340" stroke-width="1.4" marker-end="url(#arrow)"/><rect x="360" y="520" width="260" height="100" rx="10" fill="#1f1828" stroke="#c2a4ff" stroke-width="1.4"/><text x="490.0" y="568.0" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="14" font-weight="600" fill="#e9e4ee">Label Generation</text><text x="490.0" y="586.0" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="11.5" fill="#8d8494">Best rate selected</text><line x1="495" y1="430" x2="490" y2="520" stroke="#3a3340" stroke-width="1.4" marker-end="url(#arrow)"/><line x1="725" y1="430" x2="490" y2="520" stroke="#3a3340" stroke-width="1.4" marker-end="url(#arrow)"/><line x1="955" y1="430" x2="490" y2="520" stroke="#3a3340" stroke-width="1.4" marker-end="url(#arrow)"/><rect x="760" y="520" width="280" height="100" rx="10" fill="#151016" stroke="#3a3340" stroke-width="1.2"/><text x="900.0" y="568.0" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="14" font-weight="600" fill="#e9e4ee">Dynamics 365 ERP</text><text x="900.0" y="586.0" text-anchor="middle" font-family="Geist, Arial, sans-serif" font-size="11.5" fill="#8d8494">Bidirectional sync</text><line x1="620" y1="570" x2="760" y2="570" stroke="#3a3340" stroke-width="1.4" marker-end="url(#arrow)"/>
+<text x="60" y="712" font-family="'Geist', Arial, sans-serif" font-size="11.5" fill="#8d8494">Illustrative rate-shopping and fulfillment flow.</text>
+</svg>
