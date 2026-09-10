@@ -65,40 +65,26 @@ Edit that file and the site updates. Content that lives outside it:
 
 | Path | Status |
 |---|---|
-| `public/images/project-*.webp` | Placeholder — swap for real screenshots (1200x750) |
+| `public/images/project-*.svg` | Custom architecture-diagram illustrations — swap for real screenshots if you're ever able to show them |
 | `public/images/profile.png` | Placeholder — transparent-background portrait for mobile hero |
-| `public/models/character.glb` | **Missing** — see below |
 | `public/video/video.webm` | Retained from template, background for tech section |
 
-### 3D character model
+### 3D hero visual
 
-**Disabled by default.** Set `config.features.character3D` to `true` in `src/config.ts`
-to re-enable, but you must supply your own model first.
+**Enabled by default** (desktop only; mobile always uses `public/images/profile.png`).
+Toggle it via `config.features.character3D` in `src/config.ts`.
 
-The upstream template shipped an AES-encrypted GLB (`character.enc`) — a Blender-rigged
-figure seated at a desk with bespoke animation clips. That asset has been removed from
-this repo: the MIT licence covers the template's source code, and deliberately encrypting
-an asset signals it was not intended for redistribution.
+The upstream template shipped an AES-encrypted GLB — a Blender-rigged figure of the
+original author, seated at a desk. That asset never shipped in this repo: the MIT
+licence covers the template's source code, not an asset its author deliberately
+encrypted to prevent reuse (and which was very likely his own likeness).
 
-Supplying a replacement is non-trivial. `src/components/Character/utils/` expects:
-
-| Requirement | Detail |
-|---|---|
-| Rig | Blender Rigify naming (`spine.006`, `f_index.03.L`, `footL`, `footR`) |
-| Animation clips | `introAnimation`, `typing`, `Blink`, `browup`, `key1`–`key6` |
-| Format | GLB, Draco-compressed, AES-CBC encrypted via `public/models/encrypt.cjs` |
-| Bone hooks | `footL`/`footR` repositioned on load; head bone driven by cursor |
-
-A stock Mixamo or Ready Player Me export will not drop in — the bone naming and clip
-names differ, and `character.ts` will throw on the missing `footR` node.
-
-Realistic paths:
-
-1. **Leave it off.** The layout works without it; the hero renders type-only on desktop
-   and uses `public/images/profile.png` on mobile.
-2. **Author your own in Blender**, matching the rig and clip names above.
-3. **Replace the 3D layer** with something simpler and more on-message — an abstract
-   scene, an animated architecture diagram — by rewriting `src/components/Character/Scene.tsx`.
+`src/components/Character/Scene.tsx` is a full rewrite: an original, license-free
+three.js scene — a small animated node/data-topology (a glowing core connected to
+orbiting nodes) that rotates slowly and tilts toward the cursor. No Blender rig, no
+GLB, no external asset at all — everything is procedural three.js geometry, so there's
+nothing to source or re-encrypt. Swap it for something else entirely by rewriting that
+file, or set `character3D: false` to fall back to the typography-only hero.
 
 ---
 

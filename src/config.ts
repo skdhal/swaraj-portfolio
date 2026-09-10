@@ -1,8 +1,9 @@
 export const config = {
-    // Set to false to disable the 3D character entirely.
-    // See README — the bundled model belongs to the original template author.
+    // Desktop hero visual: an animated 3D node-topology (see
+    // Character/Scene.tsx), original and license-free. Set to false to
+    // disable it entirely and fall back to the typography-only hero.
     features: {
-        character3D: false
+        character3D: true
     },
     developer: {
         name: "Swaraj",

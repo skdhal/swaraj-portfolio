@@ -134,8 +134,9 @@ without modification.
 ## 7. After it's live
 
 - Test on a real phone, not just a narrow browser window
-- Run Lighthouse (Chrome DevTools → Lighthouse) — the Three.js bundle is 580 KB, so
-  expect a performance hit if you re-enable the 3D layer
+- Run Lighthouse (Chrome DevTools → Lighthouse) — the Three.js bundle is 580 KB and
+  loads on desktop for the 3D hero visual; set `character3D: false` in `src/config.ts`
+  if you'd rather trade that for a lighter typography-only hero
 - Add the URL to your LinkedIn profile and CV
 - Vercel Analytics and Speed Insights are already wired in via `App.tsx`; they only
   report on Vercel. Harmless elsewhere, or remove the two imports.

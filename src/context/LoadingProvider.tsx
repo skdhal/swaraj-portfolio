@@ -6,7 +6,6 @@ import {
   useState,
 } from "react";
 import Loading from "../components/Loading";
-import { config } from "../config";
 
 interface LoadingType {
   isLoading: boolean;
@@ -16,10 +15,13 @@ interface LoadingType {
 
 export const LoadingContext = createContext<LoadingType | null>(null);
 
-// The loader only ever reaches 100% via the 3D character's onLoad callback
-// (see Character/Scene.tsx). With no character to load, it must be skipped
-// the same way mobile skips it, or it hangs at 0% forever.
-const skipLoader = () => window.innerWidth <= 768 || !config.features.character3D;
+// The progress-bar loading screen exists for a heavy asset that needs
+// preloading before reveal (originally a large encrypted 3D model). The
+// current hero visual (see Character/Scene.tsx) is a few lightweight
+// procedural three.js primitives with no such asset, so it's always
+// skipped — same bootstrap path mobile already used. Kept in place
+// (rather than removed) in case a heavier visual is ever added back.
+const skipLoader = () => true;
 
 export const LoadingProvider = ({ children }: PropsWithChildren) => {
   const [isLoading, setIsLoading] = useState(() => !skipLoader());
